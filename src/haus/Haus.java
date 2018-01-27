@@ -23,22 +23,39 @@ public class Haus {
         int Dachneigung;
         
         //Gleitkommazahlen
-        float Lange;
+        float Laenge;
         float Breite;
         double Stromverbrauch;
+        double Grundflaeche;
+        double Wohnflaeche;
         
         //char 0 ... 65.535
         char Energieeffizienzklasse = 'A'; 
         
         //Boolean true / false
         boolean Photovoltaik;
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        Haus Haus1 = new Haus();
+        Haus1.set_Besitzer("Boesche");
+        System.out.println(Haus1.get_Besitzer());
+        Haus1.set_Grundflaeche();
         
     }
+    //Funktionserklärung get-set
+    public String get_Besitzer()
+    {
+        return Besitzer;
+    }
     
+    public void set_Besitzer(String neuer_Besitzer)
+    {
+        Besitzer= neuer_Besitzer;
+    }
+    
+    public void set_Grundflaeche()
+    {
+        Grundflaeche=Laenge*Breite*Anz_Geschosse;
+    }
 }
