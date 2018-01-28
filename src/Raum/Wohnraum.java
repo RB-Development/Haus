@@ -9,12 +9,12 @@ package Raum;
  *
  * @author RB_Development
  */
-public class Wohnraum {
+public class Wohnraum extends Raum {
     
     
-    public Wohnraum()
+    public Wohnraum(float Laenge, float Breite)
     {
-        
+        super(Laenge, Breite);
     }
     
    

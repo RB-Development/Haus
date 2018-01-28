@@ -10,9 +10,10 @@ package Raum;
  * @author RB_Development
  */
 public class Raum {
-    private float Laenge;
-    private float Breite;
-    private double Grundflaeche;
+    protected float Laenge;
+    protected float Breite;
+    protected double Grundflaeche;
+    protected String Name;
     
     public Raum(float Laenge, float Breite)
     {
