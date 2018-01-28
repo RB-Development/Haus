@@ -5,6 +5,8 @@
  */
 package haus;
 
+import Raum.*;
+
 /**
  *
  * @author RB_Development
@@ -38,10 +40,13 @@ public class Haus {
     public static void main(String[] args) {
         // TODO code application logic here
         Haus Haus1 = new Haus();
-        Haus1.set_Besitzer("Boesche");
-        System.out.println(Haus1.get_Besitzer());
+        Haus1.set_Besitzer("RB");
         Haus1.set_Grundflaeche();
         
+        //Räume initialisieren
+        Bad Gaeste_WC = new Bad(3,3);
+        Wohnraum Kueche = new Wohnraum(5,6);
+        Wohnraum Flur = new Wohnraum (2,3);
     }
     //Funktionserklärung get-set
     public String get_Besitzer()
